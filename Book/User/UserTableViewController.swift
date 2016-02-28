@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UITools
 
 class UserTableViewController: UITableViewController {
     @IBOutlet weak var imageViewIcon: UIImageView!
@@ -35,5 +36,8 @@ class UserTableViewController: UITableViewController {
     }
 
 
+    @IBAction func showAvatar(sender: AnyObject) {
+        ImageBrowser.showFromImageView(imageViewIcon, URLStrings: [User.sharedUser.avatar], index: 0)
+    }
 
 }

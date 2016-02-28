@@ -165,7 +165,7 @@
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="braceletRankProfileStepsBg" translatesAutoresizingMaskIntoConstraints="NO" id="tT7-ju-ah9">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="160"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KWc-sF-sTU">
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KWc-sF-sTU">
                                     <rect key="frame" x="260" y="16" width="80" height="80"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="KWc-sF-sTU" secondAttribute="height" multiplier="1:1" id="68P-5Y-ksw"/>
@@ -177,6 +177,9 @@
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="a9D-Qj-S4P" appends="YES" id="kEU-wx-lG5"/>
+                                    </connections>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrM-bm-6U3">
                                     <rect key="frame" x="279" y="104" width="42" height="21"/>
@@ -323,6 +326,11 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTc-Gc-Yeb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="a9D-Qj-S4P">
+                    <connections>
+                        <action selector="showAvatar:" destination="oT5-vQ-Rpy" id="EeK-Mj-tjQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
         <!--Store Container View Controller-->
