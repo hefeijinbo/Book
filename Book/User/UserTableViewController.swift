@@ -30,8 +30,6 @@ class UserTableViewController: UITableViewController {
         labelAlt.text = User.sharedUser.alt
         labelCreated.text = User.sharedUser.created
         labelDesc.text = User.sharedUser.desc
-        
-        tableView.tableFooterView = UIView()
 
     }
 
@@ -40,4 +38,8 @@ class UserTableViewController: UITableViewController {
         ImageBrowser.showFromImageView(imageViewIcon, URLStrings: [User.sharedUser.avatar], index: 0)
     }
 
+    @IBAction func logout(sender: AnyObject) {
+        User.sharedUser.logout()
+        navigationController?.popViewControllerAnimated(true)
+    }
 }

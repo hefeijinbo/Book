@@ -101,6 +101,19 @@ class User: NSObject,NSCoding {
         douban_user_name = ""
         refresh_token = ""
         douban_user_id = ""
+        alt = "";
+        avatar = ""
+        created = ""
+        desc = ""
+        is_banned = 0
+        is_suicide = 0;
+        large_avatar = ""
+        loc_id = 0;
+        loc_name = "";
+        name = "";
+        signature = "";
+        type = "";
+        NSKeyedArchiver.archiveRootObject(self, toFile: DocumentPath + "/user")
     }
     
     func encodeWithCoder(aCoder: NSCoder) {

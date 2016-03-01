@@ -465,7 +465,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="12" height="23"/>
+        <image name="back" width="8" height="15"/>
         <image name="user_login_off" width="20" height="20"/>
         <image name="zan" width="16" height="15"/>
     </resources>
