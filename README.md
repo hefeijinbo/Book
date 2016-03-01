@@ -8,10 +8,10 @@ iOS开发中常用UI控件
 ![](https://github.com/hefeijinbo/Upload-Resources/blob/master/book02.png)
 
 ##### 登录
-![](https://github.com/hefeijinbo/Upload-Resources/blob/master/book03	.png)
+![](https://github.com/hefeijinbo/Upload-Resources/blob/master/book03.png)
 
 ##### 个人信息
-![](https://github.com/hefeijinbo/Upload-Resources/blob/master/book04	.png)
+![](https://github.com/hefeijinbo/Upload-Resources/blob/master/book04.png)
 
 ##### 图书详情
 ![](https://github.com/hefeijinbo/Upload-Resources/blob/master/book05.png)
