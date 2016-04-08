@@ -31,7 +31,7 @@ class DetailHeadView: UIView {
     
     func configureWith(detailVC:DetailViewController) {
         self.detailVC = detailVC
-        imageViewIcon.addGestureRecognizer(UITapGestureRecognizer(target: detailVC, action: "showImage:"))
+        imageViewIcon.addGestureRecognizer(UITapGestureRecognizer(target: detailVC, action: #selector(DetailViewController.showImage(_:))))
         imageViewIcon.setImageWith(detailVC.book.image)
         labelTitle.text = detailVC.book.title
         ratingView.value = CGFloat(detailVC.book.rating.average)

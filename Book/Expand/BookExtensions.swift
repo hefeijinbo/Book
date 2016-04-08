@@ -99,13 +99,14 @@ extension UIImageView {
             }
             self.image = cacheImage
         } else { // 下载网络图片并设置合适的size
-            SDWebImageDownloader.sharedDownloader().downloadImageWithURL(URL, options: .AllowInvalidSSLCertificates, progress: nil, completed: { (var image, data, error, result) -> Void in
+            SDWebImageDownloader.sharedDownloader().downloadImageWithURL(URL, options: .AllowInvalidSSLCertificates, progress: nil, completed: { ( image, data, error, result) -> Void in
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    if image != nil && image.size.width > width {
-                        let size = CGSizeMake(width, image.size.height * (width / image.size.width))
-                        image = image.resizeToSize(size)
+                    var image2 = image
+                    if image2 != nil && image2.size.width > width {
+                        let size = CGSizeMake(width, image2.size.height * (width / image2.size.width))
+                        image2 = image2.resizeToSize(size)
                     }
-                    self.image = image
+                    self.image = image2
                 })
             })
         }

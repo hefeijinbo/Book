@@ -19,7 +19,7 @@ class BookCell: UITableViewCell {
     @IBOutlet weak var labelDetail: UILabel!
     
     override func awakeFromNib() {
-        imageViewIcon.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "clickImageView"))
+        imageViewIcon.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(BookCell.clickImageView)))
     }
     
     func clickImageView() {

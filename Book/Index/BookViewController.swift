@@ -38,7 +38,7 @@ class BookViewController: UIViewController,UITableViewDataSource,UITableViewDele
         searchController.bookController = self
         searchView.addSubview(searchController.searchController.searchBar)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "updateUserInfo", name: NetManager.NotificationUserInfo, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(BookViewController.updateUserInfo), name: NetManager.NotificationUserInfo, object: nil)
     }
     
     override func viewWillAppear(animated: Bool) {
