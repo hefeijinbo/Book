@@ -24,10 +24,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UITools.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2B76BA0573B8835EACF4C3F25CE2A163</key>
+		<key>33FBFACF8B790C903CEE3C9D521BF6C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>65AB4A1C83D2FA18BC05C97B96AEA591</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6847254D016329D4A531D34ED2B6DF81</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CF2B834186275CA37BC2A1611A545444</key>
+		<key>933D759B06F9B0BA882E12203B2996A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

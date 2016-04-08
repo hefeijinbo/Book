@@ -7,6 +7,7 @@ target ‘Book’ do
 pod 'AFNetworking'
 pod 'MJRefresh'
 pod 'SDWebImage'
+pod 'UITools', :git => 'https://github.com/hefeijinbo/UITools.git'
 
 end
 

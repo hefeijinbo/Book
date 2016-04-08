@@ -87,9 +87,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Book/AFNetworking.framework"
   install_framework "Pods-Book/MJRefresh.framework"
   install_framework "Pods-Book/SDWebImage.framework"
+  install_framework "Pods-Book/UITools.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Book/AFNetworking.framework"
   install_framework "Pods-Book/MJRefresh.framework"
   install_framework "Pods-Book/SDWebImage.framework"
+  install_framework "Pods-Book/UITools.framework"
 fi

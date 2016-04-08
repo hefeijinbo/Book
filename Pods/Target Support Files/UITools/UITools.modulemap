@@ -1,0 +1,6 @@
+framework module UITools {
+  umbrella header "UITools-umbrella.h"
+
+  export *
+  module * { export * }
+}
