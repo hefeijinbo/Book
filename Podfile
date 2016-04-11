@@ -2,7 +2,7 @@
 platform :ios, '8.0'
 use_frameworks!
 
-target ‘Book’ do
+target 'Book' do
 
 pod 'AFNetworking'
 pod 'MJRefresh'
