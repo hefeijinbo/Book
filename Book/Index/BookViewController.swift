@@ -130,7 +130,7 @@ class BookViewController: UIViewController,UITableViewDataSource,UITableViewDele
                     if indexPaths.isEmpty {
                         self.tableView.footerEndRefreshNoMoreData()
                     } else {
-                        self.page++
+                        self.page = self.page + 1
                         self.tableView.footerEndRefresh()
                         self.tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
                     }

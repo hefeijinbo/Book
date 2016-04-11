@@ -47,7 +47,7 @@ class DetailViewController: UIViewController,UITableViewDataSource,UITableViewDe
                     if indexPaths.isEmpty {
                         self.tableView.footerEndRefreshNoMoreData()
                     } else {
-                        self.page++
+                        self.page = self.page + 1
                         self.tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Automatic)
                         self.tableView.footerEndRefresh()
                     }
